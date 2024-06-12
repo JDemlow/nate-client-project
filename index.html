@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About | Aidly</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <!-- Link to your CSS file -->
   </head>
   <body>
@@ -171,39 +175,85 @@
 
       <section class="testimonials" id="client-testimonials">
         <h2>Client Testimonials</h2>
-        <div class="testimonial-carousel">
-          <div class="testimonial active">
-            <p>
-              "Testimonial 1: Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit."
-            </p>
-            <p class="testimonial-author">Author 1 – Position 1</p>
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <p>
+                "Working with Lexi/Aidly was game-changing for Dental Lifeline
+                Network. Lexi’s expertise and insights were invaluable in
+                guiding us through complex IT and systems decisions. Her ability
+                to analyze our existing systems, identify areas for improvement
+                and implement solutions significantly enhanced our operational
+                efficiency. Lexi has a deep understanding of technology as well
+                as excellent leadership and training skills."
+              </p>
+              <p class="testimonial-author">
+                Lynda Ricketson – President & CEO – Dental Lifeline Network
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <p>
+                "Working with Aidly has been a wonderful partnership for us. We
+                operate with a small team and having Aidly as a partner has been
+                like having another member of the team we can rely on. Over the
+                course of the last year we have worked with Aidly to build two
+                websites, rebrand our company, update and migrate email and file
+                systems, develop and implement surveys and data collection
+                processes, and manage our day to day IT environment. Lexi and
+                her team are responsive, knowledgeable, creative, and excellent
+                problem solvers. Lexi excels at training staff in an accessible
+                and responsive way while also providing clear documentation for
+                systems and processes. Aidly has helped us think through the
+                best ways to set up our systems and accomplish our goals while
+                centering our shared values. We highly recommend them to anyone
+                needing fractional IT or CIO support."
+              </p>
+              <p class="testimonial-author">
+                Danielle Shoots – Director & Founder – DEMI Fund
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <p>
+                "Aidly has provided amazing training for our staff, ensuring we
+                develop the skills in-house to sustainably support our
+                employees. Lexi strikes a great balance of meeting us where we
+                are, providing the right level of help for achieving our goals
+                now while also ensuring she is setting our organization up for
+                success in the long run."
+              </p>
+              <p class="testimonial-author">
+                Monalisa Olarte – VP & CFO - The Colorado Trust
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <p>
+                "I am delighted to share my exceptional experience working with
+                Lexi from Aidly, a standout professional whose technical
+                expertise is matched only by her kindness and dedication to
+                client satisfaction. From the onset, Lexi distinguished herself
+                from the crowd of IT services with a genuine and approachable
+                demeanor. Her kindness and patience was immediately evident,
+                creating an environment where questions were not only welcomed
+                but encouraged. In an industry often characterized by technical
+                jargon, Lexi effortlessly translated complex concepts, ensuring
+                that even those less familiar with IT could grasp the
+                information. Beyond their technical prowess, Lexi consistently
+                went the extra mile to understand our specific needs and
+                challenges. Her ability to empathize with our team members who
+                may not be as tech-savvy fostered a positive and inclusive
+                atmosphere. Lexi is always willing to take the time to explain
+                solutions in a way that makes everyone feel comfortable and
+                supported.
+              </p>
+              <p class="testimonial-author">
+                Hali Nurnberg, LPC - Executive Director - Counseling & Education
+                Center
+              </p>
+            </div>
           </div>
-          <div class="testimonial">
-            <p>
-              "Testimonial 2: Sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua."
-            </p>
-            <p class="testimonial-author">Author 2 – Position 2</p>
-          </div>
-          <div class="testimonial">
-            <p>
-              "Testimonial 3: Ut enim ad minim veniam, quis nostrud exercitation
-              ullamco laboris."
-            </p>
-            <p class="testimonial-author">Author 3 – Position 3</p>
-          </div>
-          <div class="testimonial">
-            <p>
-              "Testimonial 4: Duis aute irure dolor in reprehenderit in
-              voluptate velit esse cillum."
-            </p>
-            <p class="testimonial-author">Author 4 – Position 4</p>
-          </div>
-        </div>
-        <div class="testimonial-nav">
-          <span class="prev">&lt;</span>
-          <span class="next">&gt;</span>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
       </section>
     </main>
@@ -226,5 +276,14 @@
     </footer>
 
     <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>
