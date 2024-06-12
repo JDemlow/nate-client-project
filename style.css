@@ -229,7 +229,6 @@ main {
 .value-bullets li {
   margin-bottom: 5px;
 }
-
 /* Testimonials Section */
 .testimonials {
   background-color: #4a777f;
@@ -242,11 +241,26 @@ main {
 
 .testimonials h2 {
   font-size: 32px;
+  font-weight: 100;
   margin-bottom: 20px;
 }
 
+.testimonial-carousel {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
 .testimonial {
-  margin: 20px 0;
+  display: none;
+  padding: 20px;
+  transition: opacity 0.5s ease;
+}
+
+.testimonial.active {
+  display: block;
+  opacity: 1;
 }
 
 .testimonial p {
@@ -256,7 +270,37 @@ main {
 
 .testimonial-author {
   margin-top: 20px;
-  font-weight: bold;
+}
+
+.testimonial-nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -50px; /* Adjust as needed to center vertically */
+}
+
+.testimonial-nav .prev,
+.testimonial-nav .next {
+  cursor: pointer;
+  font-size: 125px; /* Increase font size for larger arrows */
+  font-weight: 100;
+  color: #ffffff;
+  user-select: none;
+  padding: 20px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+}
+
+.testimonial-nav .prev {
+  left: -30px; /* Adjust to position correctly */
+}
+
+.testimonial-nav .next {
+  right: 30px; /* Adjust to position correctly */
 }
 
 /* Footer Section */

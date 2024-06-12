@@ -11,22 +11,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Testimonial Carousel Functionality
 const testimonials = document.querySelectorAll(".testimonial");
+const prevButton = document.querySelector(".prev");
+const nextButton = document.querySelector(".next");
 let currentTestimonial = 0;
 
 function showTestimonial(index) {
   testimonials.forEach((testimonial, i) => {
-    testimonial.style.display = i === index ? "block" : "none";
+    testimonial.classList.remove("active");
+    if (i === index) {
+      testimonial.classList.add("active");
+    }
   });
 }
 
-document.querySelector(".next").addEventListener("click", () => {
-  currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+prevButton.addEventListener("click", () => {
+  currentTestimonial =
+    (currentTestimonial - 1 + testimonials.length) % testimonials.length;
   showTestimonial(currentTestimonial);
 });
 
-document.querySelector(".prev").addEventListener("click", () => {
-  currentTestimonial =
-    (currentTestimonial - 1 + testimonials.length) % testimonials.length;
+nextButton.addEventListener("click", () => {
+  currentTestimonial = (currentTestimonial + 1) % testimonials.length;
   showTestimonial(currentTestimonial);
 });
 
