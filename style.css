@@ -364,3 +364,121 @@ footer {
 .swiper-button-prev:hover {
   --swiper-theme-color: #ccc;
 }
+
+/* Media Queries */
+
+/* top-banner */
+
+@media screen and (max-width: 768px) {
+  .top-banner {
+    height: auto;
+    padding: 20px;
+  }
+}
+
+/* About Us Section */
+
+@media screen and (max-width: 768px) {
+  .top-banner {
+    height: auto;
+    padding: 20px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .about-us {
+    padding: 20px;
+  }
+
+  .about-us h1 {
+    font-size: 24px;
+  }
+
+  .about-us p {
+    font-size: 16px;
+  }
+
+  .profile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-pic img {
+    margin-bottom: 20px;
+    height: auto;
+    width: 100%;
+  }
+
+  .profile-info {
+    width: 100%;
+  }
+
+  .values .value-item {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .values .value-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .values .value-item h3 {
+    font-size: 18px;
+  }
+
+  .values .value-item p {
+    font-size: 16px;
+  }
+
+  .testimonials h2 {
+    font-size: 24px;
+  }
+
+  .testimonials p {
+    font-size: 16px;
+  }
+
+  .swiper {
+    padding: 20px;
+  }
+
+  .swiper-slide {
+    padding: 0 20px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+
+  .swiper-pagination {
+    display: block;
+  }
+
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #333;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-item {
+    margin-bottom: 20px;
+  }
+
+  .contact-item:last-child {
+    margin-bottom: 0;
+  }
+}
