@@ -220,7 +220,7 @@ main {
 }
 
 .value-bullets {
-  font-size: 14px; /* Smaller font size for bullet points */
+  font-size: 13px; /* Smaller font size for bullet points */
   line-height: 1.4;
   margin-top: 10px;
   padding-left: 20px; /* Indent bullet points */
